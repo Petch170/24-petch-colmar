@@ -3,12 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    height: 100%;
+    width: 100%;
+
+}
 .nav-bar{
     height:64px ;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     margin: 0 24px;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -18,44 +22,60 @@ li, a{
 }
 .nav-name{
     display: flex;
-    justify-content:start;
-    font-size: 32px;
+}
+.nav-name-thin{
+    font-weight: thin;
 }
 .nav-list{
     display: flex;
     gap: 16px;
+    flex: 1;
+    justify-content: flex-end;
 }
-
 .hero{
-    display: flex;
-    background: gray;
     height: 100vh;
+    background: rgb(223, 221, 221);
+ display: flex;
 }
-
 .hero-left{
-    background:blue;
-    flex-grow: 1;
-    /* padding: 32px 24px; */
+    margin: 32px 24px;
+    /* background: red; */
+    flex: 1;
+    overflow: hidden;
+    position: relative;
 }
-/* img{width:60%;
-object-fit: cover;} */
-
+.img-left{
+height: 100%;
+    width: 60%;
+    object-fit: cover;
+}
 .hero-right{
-    background: red;
+    /* background: blue; */
+    flex: 1;
+    padding: 24px;
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    /* flex-grow: 1; */
-    
-    /* padding: 24px; */
 }
-.hero-right-text{
-    display: flex;
-
-
+.hero-text{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   /* align-items: center; */
+/* background: yellow; */
+}
+.hero-text1{
+    font-size: 60px;
+    color: rgb(70, 69, 69);
+}
+.hero-text2{
+    font-size: 24px;
+    color:rgb(70, 69, 69) ;
+    /* background: darkblue; */
 }
 .hero-btn{
-    margin: 32px;
-    padding: 8px 0;
+padding: 8px 0;
+width: 100%;
+font-size: 30px;
+background-color: rgb(70, 69, 69);
+color:aliceblue;
 }
-
-
