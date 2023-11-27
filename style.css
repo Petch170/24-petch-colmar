@@ -33,20 +33,19 @@ li, a{
     justify-content: flex-end;
 }
 .hero{
-    height: 100vh;
     background: rgb(223, 221, 221);
  display: flex;
 }
 .hero-left{
+    display: flex;
     margin: 32px 24px;
     /* background: red; */
     flex: 1;
-    overflow: hidden;
-    position: relative;
+   /* overflow: hidden; */
+    position: relative; 
 }
-.img-left{
-height: 100%;
-    width: 60%;
+.hero-left img{
+    /* max-width: 60vh; */
     object-fit: cover;
 }
 .hero-right{
@@ -60,7 +59,7 @@ height: 100%;
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
-   /* align-items: center; */
+   align-items: center;
 /* background: yellow; */
 }
 .hero-text1{
@@ -78,4 +77,74 @@ width: 100%;
 font-size: 30px;
 background-color: rgb(70, 69, 69);
 color:aliceblue;
+}
+
+.information{
+    display: flex;
+    background: palegoldenrod;
+    padding: 32px 24px;
+}
+.info-l{
+    background: red;
+    /* width: 60%; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* position: relative; */
+}
+.info-l img{
+    /* position: absolute; */
+    width:100%;
+    object-fit:cover;
+    overflow: hidden;
+}
+.info-l-text{
+    display: flex;
+    flex-direction: column;
+    background: green;
+ padding-top: 32px
+;}
+
+
+.info-l-text2{padding: 24px 0;
+}
+
+.info-r{
+    /* background: fuchsia; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+   
+}
+.info{
+    display: flex;
+   Border: 1 solid black;
+   padding: 16px;
+    /* background: darkblue; */
+}
+.info-img{
+    /* background: darkblue; */
+    position: relative;
+}
+.info-text{
+    display: flex;
+    width: 65% ;
+    flex-direction: column;  
+    justify-content: center;
+      /* background: firebrick; */
+}
+.course{
+    display: flex;
+    justify-content: center;
+}
+
+.course-main{
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
 }
